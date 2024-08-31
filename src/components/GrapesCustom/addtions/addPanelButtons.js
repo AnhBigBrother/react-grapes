@@ -100,13 +100,13 @@ export const addPanelButtons = (editor, id) => {
 		buttons: [
 			{
 				id: "save_btn",
-				label: svgSave,
+				label: "Save",
 				command: "save-to-localStorage",
 				togglable: false,
 			},
 			{
 				id: "clear",
-				label: svgClear,
+				label: "Clear storage",
 				command: "clear-saved",
 				togglable: false,
 			},
