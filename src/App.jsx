@@ -22,14 +22,14 @@ function App() {
 			<div style={{ width: "100%", flexGrow: 1 }}>
 				<Routes>
 					<Route
-						path='/custom'
+						path='/react-grapes/custom'
 						element={<GrapesCustomPage />}></Route>
 					<Route
-						path='/sdk'
+						path='/react-grapes/sdk'
 						element={<GrapesSdkPage />}></Route>
 					<Route
 						path='*'
-						element={<Navigate to={"/custom"} />}></Route>
+						element={<Navigate to={"/react-grapes/custom"} />}></Route>
 				</Routes>
 			</div>
 		</div>
