@@ -6,7 +6,7 @@ const GrapesSDK = () => {
 	return (
 		<StudioEditor
 			options={{
-				licenseKey: "d8ba181683e14a23a3409127c189b89a7b5c04ed1e354f00acede3088b977fdc",
+				licenseKey: "89540c6385b643f6961d51419030eca7ad4286d9ca3040b1936506df31ed39d6",
 				assets: {
 					// Provide a custom upload handler for assets
 					onUpload: async ({ files }) => {
