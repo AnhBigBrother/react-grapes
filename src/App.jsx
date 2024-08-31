@@ -1,12 +1,12 @@
 import React from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Link, Navigate, Route, Routes } from "react-router-dom";
 import GrapesCustomPage from "./page/GrapesCustomPage";
 import GrapesSdkPage from "./page/GrapesSdkPage";
 
 function App() {
 	return (
 		<div style={{ display: "flex", flexDirection: "column", width: "100vw", height: "100vh" }}>
-			<div
+			<ul
 				style={{
 					display: "flex",
 					flexDirection: "row",
@@ -16,20 +16,24 @@ function App() {
 					padding: "1rem",
 					backgroundColor: "#737373",
 				}}>
-				<a href='/custom'>Grapes custom</a>
-				<a href='/sdk'>Grapes sdk</a>
-			</div>
+				<li>
+					<Link to={"/custom"}>Custom</Link>
+				</li>
+				<li>
+					<Link to={"/sdk"}>Sdk</Link>
+				</li>
+			</ul>
 			<div style={{ width: "100%", flexGrow: 1 }}>
 				<Routes>
 					<Route
-						path='/react-grapes/custom'
+						path='/custom'
 						element={<GrapesCustomPage />}></Route>
 					<Route
-						path='/react-grapes/sdk'
+						path='/sdk'
 						element={<GrapesSdkPage />}></Route>
 					<Route
 						path='*'
-						element={<Navigate to={"/react-grapes/custom"} />}></Route>
+						element={<Navigate to={"/custom"} />}></Route>
 				</Routes>
 			</div>
 		</div>
