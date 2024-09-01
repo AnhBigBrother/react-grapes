@@ -16,14 +16,17 @@ export const svgImage = `<svg style="width:24px;height:24px" viewBox="0 0 24 24"
   <path d="M8.5,13.5L11,16.5L14.5,12L19,18H5M21,19V5C21,3.89 20.1,3 19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19Z" />
 </svg>`;
 
-export const svgVideo = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play">
-  <polygon points="6 3 20 12 6 21 6 3"/>
-</svg>`;
+export const svgVideo = `<svg
+		xmlns='http://www.w3.org/2000/svg'
+		viewBox='0 0 576 512'>
+		<path d='M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z' />
+	</svg>`;
 
-export const svgLink = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-</svg>`;
+export const svgLink = `<svg
+		xmlns='http://www.w3.org/2000/svg'
+		viewBox='0 0 640 512'>
+		<path d='M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z' />
+	</svg>`;
 
 export const svgInput = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-cursor-input">
   <path d="M5 4h1a3 3 0 0 1 3 3 3 3 0 0 1 3-3h1"/>
@@ -43,11 +46,14 @@ export const svgMobile = `<svg xmlns="http://www.w3.org/2000/svg" width="24" hei
   <path d="M12 18h.01"/>
 </svg>`;
 
-export const svgSave = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-save">
-  <path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
-  <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"/>
-  <path d="M7 3v4a1 1 0 0 0 1 1h7"/>
-</svg>`;
+export const svgSave = `<svg
+		viewBox='0 0 24 24'
+		role='presentation'
+		style='width: 18px; height: 18px;'>
+		<path
+			d='M5,3A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5.5L18.5,3H17V9A1,1 0 0,1 16,10H8A1,1 0 0,1 7,9V3H5M12,4V9H15V4H12M7,12H17A1,1 0 0,1 18,13V19H6V13A1,1 0 0,1 7,12Z'
+			style='fill: currentcolor;'></path>
+	</svg>`;
 
 export const svgClear = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eraser">
   <path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/>
@@ -55,16 +61,17 @@ export const svgClear = `<svg xmlns="http://www.w3.org/2000/svg" width="24" heig
   <path d="m5 11 9 9"/>
 </svg>`;
 
-export const svgBlocks = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-blocks">
-  <rect width="7" height="7" x="14" y="3" rx="1"/>
-  <path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"/>
-</svg>`;
+export const svgBlocks = `<svg
+		xmlns='http://www.w3.org/2000/svg'
+		viewBox='0 0 576 512'>
+		<path d='M248 0L208 0c-26.5 0-48 21.5-48 48l0 112c0 35.3 28.7 64 64 64l128 0c35.3 0 64-28.7 64-64l0-112c0-26.5-21.5-48-48-48L328 0l0 80c0 8.8-7.2 16-16 16l-48 0c-8.8 0-16-7.2-16-16l0-80zM64 256c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l160 0c35.3 0 64-28.7 64-64l0-128c0-35.3-28.7-64-64-64l-40 0 0 80c0 8.8-7.2 16-16 16l-48 0c-8.8 0-16-7.2-16-16l0-80-40 0zM352 512l160 0c35.3 0 64-28.7 64-64l0-128c0-35.3-28.7-64-64-64l-40 0 0 80c0 8.8-7.2 16-16 16l-48 0c-8.8 0-16-7.2-16-16l0-80-40 0c-15 0-28.8 5.1-39.7 13.8c4.9 10.4 7.7 22 7.7 34.2l0 160c0 12.2-2.8 23.8-7.7 34.2C323.2 506.9 337 512 352 512z' />
+	</svg>`;
 
-export const svgLayers = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers">
-  <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/>
-  <path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>
-  <path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/>
-</svg>`;
+export const svgLayers = `<svg
+		xmlns='http://www.w3.org/2000/svg'
+		viewBox='0 0 576 512'>
+		<path d='M264.5 5.2c14.9-6.9 32.1-6.9 47 0l218.6 101c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 149.8C37.4 145.8 32 137.3 32 128s5.4-17.9 13.9-21.8L264.5 5.2zM476.9 209.6l53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 277.8C37.4 273.8 32 265.3 32 256s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0l152-70.2zm-152 198.2l152-70.2 53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 405.8C37.4 401.8 32 393.3 32 384s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0z' />
+	</svg>`;
 
 export const svgStyles = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brush">
   <path d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"/>
@@ -89,16 +96,20 @@ export const svgExport = `<svg xmlns="http://www.w3.org/2000/svg" width="24" hei
   <line x1="12" x2="12" y1="15" y2="3"/>
 </svg>`;
 
-export const svgJson = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-braces">
-  <path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"/>
-  <path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"/>
-</svg>`;
+export const svgJson = `<svg
+		class='svg-icon'
+		style='width: 1em;height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;'
+		viewBox='0 0 1024 1024'
+		version='1.1'
+		xmlns='http://www.w3.org/2000/svg'>
+		<path d='M216.4 107.1h50.2c5.7 0 10.4 4.7 10.4 10.4V156c0 5.7-4.7 10.4-10.4 10.4h-45.8c-5.7 0-13.4 4.6-13.4 10.4l-1 246.6c-1.3 35.2-25.1 90-58.6 91.4 23.2-1 59.6 39.5 59.6 89.4l-1 242.4c0 5.8 4.7 19.6 10.6 19.6h49.3c5.9 0 10.8 6.8 10.8 12.8v30.9c0 5.9-4.8 10.8-10.8 10.8h-49.8c-32.4-12.2-60.6-40.7-60.6-90.4v-181c0-49.9-27.1-90.4-60.6-90.4H77.1c-6.8 0-12.2-5.5-12.2-12.2v-65.9c0-6.8 5.5-12.2 12.2-12.2h18.1c33.5 0 60.6-40.5 60.6-90.4V197.4c0-49.9 27.1-90.3 60.6-90.3M808.6 107.1c33.5 0 60.6 40.4 60.6 90.3v180.8c0 49.9 27.1 90.4 60.6 90.4h18.1c6.7 0 12.2 5.4 12.2 12.2v65.9c0 6.7-5.4 12.2-12.2 12.2h-18.2c-33.5 0-60.6 40.5-60.6 90.4v181c0 49.7-28.2 78.2-60.6 90.4h-49.8c-6 0-10.8-4.9-10.8-10.8V879c0-6 4.9-12.8 10.8-12.8H808c5.9 0 10.6-13.8 10.6-19.6l-1-242.4c0-49.9 36.4-90.4 59.6-89.4-33.5-1.4-57.3-56.2-58.6-91.4l-1-246.6c0-5.8-7.7-10.4-13.4-10.4h-45.8c-5.7 0-10.4-4.7-10.4-10.4v-38.5c0-5.7 4.7-10.4 10.4-10.4h50.2M508.4 667.8c16.8 0 30.4 13.6 30.4 30.4 0 16.8-13.6 30.4-30.4 30.4-16.8 0-30.4-13.6-30.4-30.4 0-16.8 13.6-30.4 30.4-30.4M386.8 667.8c16.8 0 30.4 13.6 30.4 30.4 0 16.8-13.6 30.4-30.4 30.4-16.8 0-30.4-13.6-30.4-30.4 0-16.8 13.6-30.4 30.4-30.4M630 667.8c16.8 0 30.4 13.6 30.4 30.4 0 16.8-13.6 30.4-30.4 30.4-16.8 0-30.4-13.6-30.4-30.4 0-16.8 13.6-30.4 30.4-30.4z' />
+	</svg>`;
 
-export const svgMap = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map">
-  <path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/>
-  <path d="M15 5.764v15"/>
-  <path d="M9 3.236v15"/>
-</svg>`;
+export const svgMap = `<svg
+		xmlns='http://www.w3.org/2000/svg'
+		viewBox='0 0 576 512'>
+		<path d='M384 476.1L192 421.2l0-385.3L384 90.8l0 385.3zm32-1.2l0-386.5L543.1 37.5c15.8-6.3 32.9 5.3 32.9 22.3l0 334.8c0 9.8-6 18.6-15.1 22.3L416 474.8zM15.1 95.1L160 37.2l0 386.5L32.9 474.5C17.1 480.8 0 469.2 0 452.2L0 117.4c0-9.8 6-18.6 15.1-22.3z' />
+	</svg>`;
 
 export const svgSquare = `<svg
 		xmlns='http://www.w3.org/2000/svg'

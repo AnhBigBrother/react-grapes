@@ -20,23 +20,20 @@ export const addPanelButtons = (editor, id) => {
 			{
 				id: "visibility",
 				active: true, // active by default
-				className: "btn-toggle-borders",
-				label: svgSquare,
+				label: '<i class="fa fa-clone"></i>',
 				command: "sw-visibility", // Built-in command
 			},
 			{
 				id: "export",
-				className: "btn-open-export",
-				label: svgExport,
+				label: "<i class='fa fa-download'></i>",
 				command: "export-template",
 				context: "export-template", // For grouping context of buttons from the same panel
 			},
 			{
 				id: "show-json",
-				className: "btn-show-json",
 				label: svgJson,
-				context: "show-json",
 				command: "show-json",
+				context: "show-json",
 			},
 		],
 	});
@@ -81,14 +78,14 @@ export const addPanelButtons = (editor, id) => {
 		buttons: [
 			{
 				id: "device-desktop",
-				label: svgDesktop,
+				label: '<i class="fa fa-television"></i>',
 				command: "set-device-desktop",
 				active: true,
 				togglable: false,
 			},
 			{
 				id: "device-mobile",
-				label: svgMobile,
+				label: '<i class="fa fa-mobile"></i>',
 				command: "set-device-mobile",
 				togglable: false,
 			},
@@ -99,16 +96,29 @@ export const addPanelButtons = (editor, id) => {
 		el: `#${id}-panel__saveAndClear`,
 		buttons: [
 			{
-				id: "save_btn",
-				label: "Save",
-				command: "save-to-localStorage",
-				togglable: false,
+				id: "save-localStorage",
+				label: svgSave,
+				command: "save-localStorage",
 			},
 			{
-				id: "clear",
-				label: "Clear storage",
-				command: "clear-saved",
-				togglable: false,
+				id: "clear-localStorage",
+				className: "fa fa-trash",
+				command: "clear-localStorage",
+			},
+			{
+				id: "undo",
+				className: "fa fa-undo",
+				command: "undo",
+			},
+			{
+				id: "redo",
+				className: "fa fa-repeat",
+				command: "redo",
+			},
+			{
+				id: "preview",
+				className: "fa fa-eye",
+				command: "preview",
 			},
 		],
 	});

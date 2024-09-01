@@ -79,8 +79,25 @@ export const addCommands = (editor, id) => {
 		},
 	});
 
+	//Clear Button
+	editor.Commands.add("clear-localStorage", () => {
+		if (localStorage.getItem(`grapes_data-${id}`)) {
+			localStorage.removeItem(`grapes_data-${id}`);
+		}
+	});
+
+	//Undo
+	editor.Commands.add("undo", {
+		run: (editor) => editor.UndoManager.undo(),
+	});
+
+	// Redo
+	editor.Commands.add("redo", {
+		run: (editor) => editor.UndoManager.redo(),
+	});
+
 	// commands to save/clear localStorage
-	editor.Commands.add("save-to-localStorage", () => {
+	editor.Commands.add("save-localStorage", () => {
 		if (editor) {
 			const component = JSON.stringify(editor.getComponents());
 			const style = JSON.stringify(editor.getStyle());
@@ -88,11 +105,6 @@ export const addCommands = (editor, id) => {
 			console.log(style);
 			localStorage.setItem(`grapes_component-${id}`, component);
 			localStorage.setItem(`grapes_style-${id}`, style);
-		}
-	});
-	editor.Commands.add("clear-saved", () => {
-		if (localStorage.getItem(`grapes_data-${id}`)) {
-			localStorage.removeItem(`grapes_data-${id}`);
 		}
 	});
 };
