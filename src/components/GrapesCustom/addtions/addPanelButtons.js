@@ -2,7 +2,9 @@ import {
 	svgBlocks,
 	svgClear,
 	svgDesktop,
+	svgExpand,
 	svgExport,
+	svgEyeSlash,
 	svgJson,
 	svgLayers,
 	svgMobile,
@@ -106,6 +108,21 @@ export const addPanelButtons = (editor, id) => {
 				command: "clear-localStorage",
 			},
 			{
+				id: "clear-canvas",
+				className: "fa fa-eraser",
+				command: "clear-canvas",
+			},
+			{
+				id: "expand",
+				label: svgExpand,
+				command: "fullscreen",
+			},
+			{
+				id: "preview",
+				className: "fa fa-eye",
+				command: "enterPreview",
+			},
+			{
 				id: "undo",
 				className: "fa fa-undo",
 				command: "undo",
@@ -115,10 +132,16 @@ export const addPanelButtons = (editor, id) => {
 				className: "fa fa-repeat",
 				command: "redo",
 			},
+		],
+	});
+	editor.Panels.addPanel({
+		id: "",
+		el: `#${id}-panel__exitPreview`,
+		buttons: [
 			{
-				id: "preview",
-				className: "fa fa-eye",
-				command: "preview",
+				id: "exit__preview",
+				label: svgEyeSlash,
+				command: "existPreview",
 			},
 		],
 	});

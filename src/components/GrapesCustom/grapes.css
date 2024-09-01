@@ -4,7 +4,19 @@
   width: 100%;
 }
 
+
+.gjs-cv-canvas {
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gjs-pn-btn {
+  margin: 0;
+}
+
 .grapes {
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -21,12 +33,6 @@
 
 .editor-canvas {
   flex-grow: 1;
-}
-
-.gjs-cv-canvas {
-  top: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .gjs-block {
@@ -65,6 +71,16 @@
 .panel__saveAndClear {
   position: relative;
   height: 100%;
+}
+
+.panel__exitPreview {
+  position: absolute;
+  display: none;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+  border-radius: 10px;
+  background-color: #838080;
 }
 
 .container {

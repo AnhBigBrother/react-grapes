@@ -79,11 +79,38 @@ export const addCommands = (editor, id) => {
 		},
 	});
 
-	//Clear Button
-	editor.Commands.add("clear-localStorage", () => {
-		if (localStorage.getItem(`grapes_data-${id}`)) {
-			localStorage.removeItem(`grapes_data-${id}`);
-		}
+	// commands to save/clear localStorage
+	editor.Commands.add("save-localStorage", {
+		run(ed) {
+			if (editor) {
+				const component = JSON.stringify(editor.getComponents());
+				const style = JSON.stringify(editor.getStyle());
+				console.log(component);
+				console.log(style);
+				localStorage.setItem(`grapes_component-${id}`, component);
+				localStorage.setItem(`grapes_style-${id}`, style);
+				alert("Saved to localStorage");
+			}
+		},
+	});
+	editor.Commands.add("clear-localStorage", {
+		run(ed) {
+			if (localStorage.getItem(`grapes_component-${id}`)) {
+				if (confirm("Clear all data in localStorage?")) {
+					localStorage.removeItem(`grapes_component-${id}`);
+					localStorage.removeItem(`grapes_style-${id}`);
+				}
+			}
+		},
+	});
+
+	editor.Commands.add("clear-canvas", {
+		run(ed) {
+			if (confirm("Clear canvas?")) {
+				ed.Components.clear();
+				ed.Css.clear();
+			}
+		},
 	});
 
 	//Undo
@@ -96,15 +123,19 @@ export const addCommands = (editor, id) => {
 		run: (editor) => editor.UndoManager.redo(),
 	});
 
-	// commands to save/clear localStorage
-	editor.Commands.add("save-localStorage", () => {
-		if (editor) {
-			const component = JSON.stringify(editor.getComponents());
-			const style = JSON.stringify(editor.getStyle());
-			console.log(component);
-			console.log(style);
-			localStorage.setItem(`grapes_component-${id}`, component);
-			localStorage.setItem(`grapes_style-${id}`, style);
-		}
+	// preview
+	editor.Commands.add("enterPreview", {
+		run(ed) {
+			ed.runCommand("core:preview");
+			const exit = document.getElementById(`${id}-panel__exitPreview`);
+			exit.style.display = "block";
+		},
+	});
+	editor.Commands.add("existPreview", {
+		run(ed) {
+			ed.stopCommand("core:preview");
+			const exit = document.getElementById(`${id}-panel__exitPreview`);
+			exit.style.display = "none";
+		},
 	});
 };

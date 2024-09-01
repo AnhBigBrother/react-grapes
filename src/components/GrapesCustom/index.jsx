@@ -69,6 +69,9 @@ const GrapesCustom = ({ grapesId = "default" }) => {
 	return (
 		<div className='grapes'>
 			<div
+				id={`${grapesId}-panel__exitPreview`}
+				className='panel__exitPreview'></div>
+			<div
 				className='panel__top'
 				id={`${grapesId}-panel__top`}>
 				<div
