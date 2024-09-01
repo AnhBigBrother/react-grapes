@@ -115,7 +115,7 @@ export const addPanelButtons = (editor, id) => {
 			{
 				id: "expand",
 				label: svgExpand,
-				command: "fullscreen",
+				command: "core:fullscreen",
 			},
 			{
 				id: "preview",
@@ -125,12 +125,12 @@ export const addPanelButtons = (editor, id) => {
 			{
 				id: "undo",
 				className: "fa fa-undo",
-				command: "undo",
+				command: "core:undo",
 			},
 			{
 				id: "redo",
 				className: "fa fa-repeat",
-				command: "redo",
+				command: "core:redo",
 			},
 		],
 	});

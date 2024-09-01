@@ -113,16 +113,6 @@ export const addCommands = (editor, id) => {
 		},
 	});
 
-	//Undo
-	editor.Commands.add("undo", {
-		run: (editor) => editor.UndoManager.undo(),
-	});
-
-	// Redo
-	editor.Commands.add("redo", {
-		run: (editor) => editor.UndoManager.redo(),
-	});
-
 	// preview
 	editor.Commands.add("enterPreview", {
 		run(ed) {
@@ -138,4 +128,11 @@ export const addCommands = (editor, id) => {
 			exit.style.display = "none";
 		},
 	});
+
+	// editor.Commands.add("undo", {
+	// 	run: (editor) => editor.UndoManager.undo(),
+	// });
+	// editor.Commands.add("redo", {
+	// 	run: (editor) => editor.UndoManager.redo(),
+	// });
 };
